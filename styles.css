@@ -1,0 +1,428 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 100%;
+    margin: 0 0;
+    padding: 0 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav{
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+nav ul li #login{
+    float: right;
+}
+
+/* Estilos da seção hero */
+.hero {
+    background-image: linear-gradient(to right, #333, #555);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff7043;
+}
+
+/* Estilos da seção de produtos */
+.produtos {
+    padding: 80px 0;
+}
+
+.produtos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.produto {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.produto h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    margin-bottom: 20px;
+}
+
+.produto .preco {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.produto .btn {
+    display: inline-block;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.produto .btn:hover {
+    background-color: #ff7043;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos da seção Sobre */
+.sobre {
+    padding: 80px 0;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilos da seção de Contato */
+.contato {
+    padding: 80px 0;
+}
+
+.contato h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contato p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contato form input,
+.contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contato form .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato form .btn:hover {
+    background-color: #ff7043;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* Ajuste conforme necessário */
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.popup-compra {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Estilo do fundo escuro */
+.popup-compra {
+    display: none;
+    /* Escondido por padrão */
+    position: fixed;
+    /* Fica fixo em toda a tela */
+    z-index: 999;
+    /* Fica acima de tudo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Largura total */
+    height: 100%;
+    /* Altura total */
+    overflow: auto;
+    /* Habilita scroll se necessário */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparente */
+}
+
+/* Estilo do conteúdo do popup */
+.popup-conteudo {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto;
+    /* 10% do topo e centralizado horizontalmente */
+    padding: 20px;
+    border-radius: 10px;
+    /* Cantos arredondados */
+    width: 80%;
+    /* Adaptável, mas com um máximo de 80% da largura da tela */
+    max-width: 600px;
+    /* Máximo de 600px de largura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    /* Tempo da animação */
+}
+
+/* Botão de fechar personalizado */
+.popup-compra button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.popup-compra button:hover,
+.popup-compra button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animação */
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 10%;
+        opacity: 1
+    }
+}
+
+.popup-conteudo {
+    position: relative;
+    /* Isso permite que o botão de fechar seja absolutamente posicionado em relação a este contêiner */
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Estilizando o botão de fechar */
+.popup-compra button {
+    position: absolute;
+    /* Posicionamento absoluto dentro do popup */
+    right: 10px;
+    /* 10px do lado direito do contêiner do popup */
+    top: 10px;
+    /* 10px do topo do contêiner do popup */
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.popup-compra button:hover,
+.popup-compra button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto auto;
+    align-items: center;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+    
