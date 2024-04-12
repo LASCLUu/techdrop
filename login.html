@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - TechDice</title>
+    <title>Login - TechDrop</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>TechDice</h1>
+                <h1>TechDrop</h1>
             </div>
             <nav>
                 <ul>
@@ -26,20 +26,40 @@
             </nav>
         </div>
     </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="login-container">
-            <h2>Login</h2>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button id="login" onclick="login()">Login</button>
-            <br>
-            <br>
-            <button id="cadastro" onclick="cadastrar()">Cadastro</button>   
+            <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="login">
+				<form class="form">
+					<p for="chk" aria-hidden="true">Log in</p>
+					<input class="input" type="email" name="email" placeholder="Email" required="">
+					<input class="input" type="password" name="pswd" placeholder="Password" required="">
+					<button>Log in</button>
+				</form>
+			</div>
+
+      <div class="register">
+				<form class="form">
+					<p for="chk" aria-hidden="true">Registrar</p>
+					<input class="input" type="text" name="txt" placeholder="Username" required="">
+					<input class="input" type="email" name="email" placeholder="Email" required="">
+					<input class="input" type="password" name="pswd" placeholder="Password" required="">
+					<button>Registrar</button>
+				</form>
+			</div>
+	</div>  
     </div>
 
 </body>

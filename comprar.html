@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finalizar Compra - TechDice</title>
+    <title>Finalizar Compra - TechDrop</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>  
 </head>
@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>TechDice</h1>
+                <h1>TechDrop</h1>
             </div>
             <nav>
                 <ul>
@@ -27,7 +27,12 @@
     </header>
     <section class="compra">
         <div class="container">
-            <h2>Finalizar Compra</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Finalizar Compra:</h2>
             <form action="confirmacao.html" method="post">
                 <div class="form-group">
                     <label for="nome">Nome Completo:</label>
@@ -51,39 +56,19 @@
                         <option value="pix">Pix</option>
                     </select>
                 </div>
-                <button type="submit" class="btn">Confirmar Compra</button>
+                <a href="produtos.html">
+                    <button class="ui-btn">
+                        <span>
+                            Finalizar
+                        </span>
+                    </button>
+                </a>
             </form>
         </div>
-    <div id="popupCompra" class="popup-compra" style="display: none;">
-        <div class="popup-conteudo">
-            <img src="caminho/para/imagem-do-produto.jpg" alt="Produto Comprado" id="produtoImagem"
-                style="width:100px; height:auto;">
-            <p>Compra realizada com sucesso!</p>
-            <button onclick="fecharPopup()">Fechar</button>
-        </div>
-    </div>
-    <script>
-        function mostrarPopup() {
-            document.getElementById('popupCompra').style.display = 'block';
-        }
-
-        function fecharPopup() {
-            document.getElementById('popupCompra').style.display = 'none';
-        }
-
-        // Adicione o listener ao seu formulário
-        document.querySelector('form').addEventListener('submit', function (event) {
-            event.preventDefault(); // Previne o envio do formulário
-            mostrarPopup();
-            // Aqui você pode adicionar qualquer lógica adicional que desejar após a exibição do popup
-        });
-    </script>
-
-
     </section>
     <footer>
         <div class="container">
-            <p>&copy; 2024 TechDice. Todos os direitos reservados.</p>
+            <p>&copy; 2024 TechDrop. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
