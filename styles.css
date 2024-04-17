@@ -3,39 +3,7 @@ body {
     font-family: Menlo, Roboto Mono, monospace;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle farthest-side at 0% 50%,
-            #03002e 23.5%,
-            rgba(255, 170, 0, 0) 0) 21px 30px,
-        radial-gradient(circle farthest-side at 0% 50%,
-            #a38a3e 24%,
-            rgba(240, 166, 17, 0) 0) 19px 30px,
-        linear-gradient(#03002e 14%,
-            rgba(16, 16, 15, 0) 0,
-            rgba(102, 198, 219, 0) 85%,
-            #03002e 0) 0 0,
-        linear-gradient(150deg,
-            #03002e 24%,
-            #a38a3e 0,
-            #a38a3e 26%,
-            rgba(240, 166, 17, 0) 0,
-            rgba(240, 166, 17, 0) 74%,
-            #a38a3e 0,
-            #a38a3e 76%,
-            #03002e 0) 0 0,
-        linear-gradient(30deg,
-            #03002e 24%,
-            #a38a3e 0,
-            #a38a3e 26%,
-            rgba(240, 166, 17, 0) 0,
-            rgba(240, 166, 17, 0) 74%,
-            #a38a3e 0,
-            #a38a3e 76%,
-            #03002e 0) 0 0,
-        linear-gradient(90deg,
-            #a38a3e 2%,
-            #03002e 0,
-            #03002e 98%,
-            #a38a3e 0%) 0 0 #03002e;
+    background-color: #121318;
     background-size: 40px 60px;
 }
 
@@ -111,44 +79,44 @@ header h1 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
-    color: #fff;
+    color: #ecbb2b;
 }
 
-#h2Prod{
-    background-color: #03002e;
+#h2Prod {
+    background-color: #333333;
     border: 1px solid #ecbb2b;
     margin: auto;
     width: 25%;
     margin: 0 auto 5% auto;
 }
 
-.img{
+.img {
     width: 60%;
     height: 60%;
     margin: auto;
 }
 
-#monitor{
+#monitor {
     background-image: url(monitor.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
 }
 
-.containerProdutos{
+.containerProdutos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .produto {
-    background-color: rgb(135, 134, 134);
-    border-radius: 30px;
+    background-color: white;
+    border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 30px;
     margin-bottom: 15px;
-    width: 35%;
-    margin: 0% auto 5% auto;
+    width: 40%;
+    margin: 0% auto 5% auto
 }
 
 .produto img {
@@ -203,25 +171,34 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-footer p{
+footer p {
     font-size: 1rem;
 }
 
 /* Estilos da seção Sobre */
 .sobre {
     padding: 80px 0;
+    text-decoration: none;
+    color: #ecbb2b;
 }
 
 .sobre h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
+    color: #ecbb2b;
+    text-decoration: underline;
+}
+
+.sobre div{
+    background-color: #333;
 }
 
 .sobre p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: #fefefe;
 }
 
 /* Estilos da seção de Contato */
@@ -442,7 +419,7 @@ footer p{
     font-family: Menlo, Roboto Mono, monospace;
 }
 
-div .login{
+div .login {
     font-family: Menlo, Roboto Mono, monospace;
 }
 
@@ -550,6 +527,7 @@ button:hover {
 .ui-btn:focus span::before {
     animation: chitchat linear both var(--btn-animation-duration);
 }
+
 .ui-btn-prod {
     /* AQUI CONFIGURA O BOTÃO EXPLORE! */
     --btn-default-bg: rgb(41, 41, 41);
@@ -715,18 +693,19 @@ button:hover {
 }
 
 .main {
-    /* AQUI CONFIGURA FORMULÁRIO DE LOGIN E CADASTRO! */
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #240046;
+    background-color: #333333;
     max-height: 420px;
     overflow: hidden;
     border-radius: 12px;
+    border-style: solid;
+    border-color: #a38a3e;
     box-shadow: 7px 7px 10px 3px #24004628;
 }
 
-.form {
+form {
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -745,20 +724,18 @@ button:hover {
     height: 100%;
 }
 
-.login p {
+.login label {
     margin: 25% 0 5%;
-    font-family: Menlo, Roboto Mono, monospace;
 }
 
-p {
-    color: #fff;
+.login label {
+    color: #a38a3e;
     font-size: 2rem;
     justify-content: center;
     display: flex;
     font-weight: bold;
     cursor: pointer;
-    transition: .5s ease-in-out;
-    font-family: Menlo, Roboto Mono, monospace;
+    transition: 0.5s ease-in-out;
 }
 
 .input {
@@ -773,45 +750,63 @@ p {
 
 /*Register*/
 .register {
-    background: #eee;
+    background: #a38a3e;
     border-radius: 60% / 10%;
     transform: translateY(5%);
-    transition: .8s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
-.register p {
-    color: #573b8a;
-    transform: scale(.6);
-    font-family: Menlo, Roboto Mono, monospace;
+.register label {
+    color: #333333;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 #chk:checked~.register {
     transform: translateY(-60%);
 }
 
-#chk:checked~.register p {
+#chk:checked~.register label {
     transform: scale(1);
     margin: 10% 0 5%;
 }
 
-#chk:checked~.login p {
-    transform: scale(.6);
+#chk:checked~.login label {
+    transform: scale(0.6);
     margin: 5% 0 5%;
 }
 
 /*Button*/
-.form button {
+.login button {
     width: 85%;
     height: 40px;
     margin: 12px auto 10%;
-    color: #fff;
-    background: #bdb5cc;
+    color: #333333;
+    background: #a38a3e;
     font-size: 1rem;
     font-weight: bold;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: .2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+.register button {
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color: #a38a3e;
+    background: #333333;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
 }
 
 .form button:hover {
@@ -839,4 +834,13 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+.index div.container{
+    height: center;
+    width: auto;
+}
+
+.index h1{
+    font-size: 15px;
 }
