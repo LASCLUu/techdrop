@@ -1,0 +1,45 @@
+﻿@page
+@model techdrop.Pages.Principal.comprarModel
+@{
+}
+<section class="compra">
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Finalizar Compra:</h2>
+        <form action="/Principal/confirmacao" method="post">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço de Entrega:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option value="cartao_credito">--- Selecione ---</option>
+                    <option value="cartao_credito">Cartão de Crédito</option>
+                    <option value="cartao_debito">Cartão de Débito</option>
+                    <option value="boleto">Boleto</option>
+                    <option value="pix">Pix</option>
+                </select>
+            </div>
+            <a href="/Principal/produtos">
+                <button class="ui-btn">
+                    <span>
+                        Finalizar
+                    </span>
+                </button>
+            </a>
+        </form>
+    </div>
+</section>

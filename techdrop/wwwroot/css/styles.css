@@ -1,0 +1,846 @@
+﻿body {
+    /* PERSONALIZAÇÃO DO BODY DA PÁGINA */
+    font-family: Menlo, Roboto Mono, monospace;
+    width: 100%;
+    height: 100%;
+    background-color: #121318;
+    background-size: 40px 60px;
+}
+
+
+/*-----------------------------------------------------------*/
+
+* {
+    /* PERSONALIZAÇÃO GERAL */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Menlo, Roboto Mono, monospace;
+    text-decoration: none;
+}
+
+/*-----------------------------------------------------------*/
+
+.container {
+    /* PERSONALIZAÇÃO DOS CONTAINERES */
+    width: 100%;
+    margin: 10;
+    padding: 20px;
+}
+
+
+/*-----------------------------------------------------------*/
+
+header {
+    /* PERSONALIZAÇÃO DO HEADER DAS PÁGINAS */
+    background-color: #2c2c2c;
+    color: #ecbb2b;
+    position: relative;
+    width: 100%;
+    padding: 5px 0;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------------*/
+
+
+.hero {
+    /* Estilos da seção hero */
+    background-image: linear-gradient(to right, #333, #555);
+    color: #ecbb2b;
+    text-align: center;
+    padding: 300px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/*-----------------------------------------------------------*/
+
+.produtos {
+    /* PERSONALIZAÇÃO DA PÁGINA PRODUTOS */
+    padding: 80px 0;
+}
+
+.produtos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ecbb2b;
+}
+
+#h2Prod {
+    background-color: #333333;
+    border: 1px solid #ecbb2b;
+    margin: auto;
+    width: 25%;
+    margin: 0 auto 5% auto;
+}
+
+.img {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+}
+
+#monitor {
+    background-image: url(monitor.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.containerProdutos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 15px;
+    width: 40%;
+    margin: 0% auto 5% auto
+}
+
+.produto img {
+    max-width: 90%;
+    border-radius: 30px;
+}
+
+.produto h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    margin-bottom: 20px;
+}
+
+.produto .preco {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.produto .btn {
+    display: inline-block;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: rgb(135, 134, 134);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/*-----------------------------------------------------------*/
+
+.compra h2 {
+    /* PERSONALIZAÇÃO DA ABA COMPRAR! */
+    font-size: 40px;
+    color: white;
+    text-shadow: #333;
+}
+
+/*-----------------------------------------------------------*/
+
+footer {
+    /* Estilos do rodapé */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Estilos da seção Sobre */
+.sobre {
+    padding: 80px 0;
+    text-decoration: none;
+    color: #ecbb2b;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ecbb2b;
+    text-decoration: underline;
+}
+
+.sobre div{
+    background-color: #333;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #fefefe;
+}
+
+/* Estilos da seção de Contato */
+.contato {
+    padding: 80px 0;
+}
+
+.contato h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contato p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato form p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contato form input,
+.contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contato form .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato form .btn:hover {
+    background-color: #ff7043;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group p {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* Ajuste conforme necessário */
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.popup-compra {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Estilo do fundo escuro */
+.popup-compra {
+    display: none;
+    /* Escondido por padrão */
+    position: fixed;
+    /* Fica fixo em toda a tela */
+    z-index: 999;
+    /* Fica acima de tudo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Largura total */
+    height: 100%;
+    /* Altura total */
+    overflow: auto;
+    /* Habilita scroll se necessário */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparente */
+}
+
+/* Estilo do conteúdo do popup */
+.popup-conteudo {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto;
+    /* 10% do topo e centralizado horizontalmente */
+    padding: 20px;
+    border-radius: 10px;
+    /* Cantos arredondados */
+    width: 80%;
+    /* Adaptável, mas com um máximo de 80% da largura da tela */
+    max-width: 600px;
+    /* Máximo de 600px de largura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    /* Tempo da animação */
+}
+
+/* Botão de fechar personalizado */
+.popup-compra button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.popup-compra button:hover,
+.popup-compra button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animação */
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 10%;
+        opacity: 1
+    }
+}
+
+.popup-conteudo {
+    position: relative;
+    /* Isso permite que o botão de fechar seja absolutamente posicionado em relação a este contêiner */
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Estilizando o botão de fechar */
+.popup-compra button {
+    position: absolute;
+    /* Posicionamento absoluto dentro do popup */
+    right: 10px;
+    /* 10px do lado direito do contêiner do popup */
+    top: 10px;
+    /* 10px do topo do contêiner do popup */
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.popup-compra button:hover,
+.popup-compra button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-container {
+    background-color: 0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: auto auto;
+    align-items: center;
+    font-family: Menlo, Roboto Mono, monospace;
+}
+
+div .login {
+    font-family: Menlo, Roboto Mono, monospace;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group p {
+    display: block;
+    margin-bottom: 5px;
+    font-family: Menlo, Roboto Mono, monospace;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+} */
+
+.ui-btn {
+    /* AQUI CONFIGURA O BOTÃO EXPLORE! */
+    --btn-default-bg: rgb(41, 41, 41);
+    --btn-padding: 15px 15px;
+    --btn-hover-bg: rgb(51, 51, 51);
+    --btn-transition: .3s;
+    --btn-letter-spacing: .1rem;
+    --btn-animation-duration: 1.7s;
+    --btn-shadow-color: rgba(0, 0, 0, 0.137);
+    --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+    --hover-btn-color: #ecbb2b;
+    --default-btn-color: #ecbb2b;
+    --font-size: 35px;
+    /* 👆 this field should not be empty */
+    --font-weight: 600;
+    --font-family: Menlo, Roboto Mono, monospace;
+    /* 👆 this field should not be empty */
+    width: 30%;
+    margin: auto;
+}
+
+/* button settings 👆 */
+
+.ui-btn {
+    box-sizing: auto;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-btn-color);
+    font: var(--font-weight) var(--font-size) var(--font-family);
+    background: var(--btn-default-bg);
+    border: none;
+    cursor: pointer;
+    transition: var(--btn-transition);
+    overflow: hidden;
+    box-shadow: var(--btn-shadow);
+}
+
+.ui-btn span {
+    letter-spacing: var(--btn-letter-spacing);
+    transition: var(--btn-transition);
+    box-sizing: border-box;
+    position: relative;
+    background: inherit;
+}
+
+.ui-btn span::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+}
+
+.ui-btn:hover,
+.ui-btn:focus {
+    background: var(--btn-hover-bg);
+}
+
+.ui-btn:hover span,
+.ui-btn:focus span {
+    color: var(--hover-btn-color);
+}
+
+.ui-btn:hover span::before,
+.ui-btn:focus span::before {
+    animation: chitchat linear both var(--btn-animation-duration);
+}
+
+.ui-btn-prod {
+    /* AQUI CONFIGURA O BOTÃO EXPLORE! */
+    --btn-default-bg: rgb(41, 41, 41);
+    --btn-padding: 15px 15px;
+    --btn-hover-bg: rgb(51, 51, 51);
+    --btn-transition: .3s;
+    --btn-letter-spacing: .1rem;
+    --btn-animation-duration: 1.7s;
+    --btn-shadow-color: rgba(0, 0, 0, 0.137);
+    --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+    --hover-btn-color: #ecbb2b;
+    --default-btn-color: #ecbb2b;
+    --font-size: 35px;
+    /* 👆 this field should not be empty */
+    --font-weight: 600;
+    --font-family: Menlo, Roboto Mono, monospace;
+    /* 👆 this field should not be empty */
+    width: 90%;
+    margin: 10% auto;
+}
+
+/* button settings 👆 */
+
+.ui-btn-prod {
+    box-sizing: auto;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-btn-color);
+    font: var(--font-weight) var(--font-size) var(--font-family);
+    background: var(--btn-default-bg);
+    border: none;
+    cursor: pointer;
+    transition: var(--btn-transition);
+    overflow: hidden;
+    box-shadow: var(--btn-shadow);
+}
+
+.ui-btn-prod span {
+    letter-spacing: var(--btn-letter-spacing);
+    transition: var(--btn-transition);
+    box-sizing: border-box;
+    position: relative;
+    background: inherit;
+}
+
+.ui-btn-prod span::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+}
+
+.ui-btn-prod:hover,
+.ui-btn-prod:focus {
+    background: var(--btn-hover-bg);
+}
+
+.ui-btn-prod:hover span,
+.ui-btn-prod:focus span {
+    color: var(--hover-btn-color);
+}
+
+.ui-btn-prod:hover span::before,
+.ui-btn-prod:focus span::before {
+    animation: chitchat linear both var(--btn-animation-duration);
+}
+
+@keyframes chitchat {
+    0% {
+        content: "#";
+    }
+
+    5% {
+        content: ".";
+    }
+
+    10% {
+        content: "^{";
+    }
+
+    15% {
+        content: "-!";
+    }
+
+    20% {
+        content: "#$_";
+    }
+
+    25% {
+        content: "№:0";
+    }
+
+    30% {
+        content: "#{+.";
+    }
+
+    35% {
+        content: "@}-?";
+    }
+
+    40% {
+        content: "?{4@%";
+    }
+
+    45% {
+        content: "=.,^!";
+    }
+
+    50% {
+        content: "?2@%";
+    }
+
+    55% {
+        content: "\;1}]";
+    }
+
+    60% {
+        content: "?{%:%";
+        right: 0;
+    }
+
+    65% {
+        content: "|{f[4";
+        right: 0;
+    }
+
+    70% {
+        content: "{4%0%";
+        right: 0;
+    }
+
+    75% {
+        content: "'1_0<";
+        right: 0;
+    }
+
+    80% {
+        content: "{0%";
+        right: 0;
+    }
+
+    85% {
+        content: "]>'";
+        right: 0;
+    }
+
+    90% {
+        content: "4";
+        right: 0;
+    }
+
+    95% {
+        content: "2";
+        right: 0;
+    }
+
+    100% {
+        content: "";
+        right: 0;
+    }
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    max-height: 420px;
+    overflow: hidden;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #a38a3e;
+    box-shadow: 7px 7px 10px 3px #24004628;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+}
+
+/*checkbox to switch from sign up to login*/
+#chk {
+    display: none;
+}
+
+/*Login*/
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.login label {
+    margin: 25% 0 5%;
+}
+
+.login label {
+    color: #a38a3e;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    background: #e0dede;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+/*Register*/
+.register {
+    background: #a38a3e;
+    border-radius: 60% / 10%;
+    transform: translateY(5%);
+    transition: 0.8s ease-in-out;
+}
+
+.register label {
+    color: #333333;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#chk:checked~.register {
+    transform: translateY(-60%);
+}
+
+#chk:checked~.register label {
+    transform: scale(1);
+    margin: 10% 0 5%;
+}
+
+#chk:checked~.login label {
+    transform: scale(0.6);
+    margin: 5% 0 5%;
+}
+
+/*Button*/
+.login button {
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color: #333333;
+    background: #a38a3e;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.register button {
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color: #a38a3e;
+    background: #333333;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.form button:hover {
+    background-color: #6d44b8;
+}
+
+header {
+    font-family: Menlo, Roboto Mono, monospace;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.index div.container{
+    height: center;
+    width: auto;
+}
+
+.index h1{
+    font-size: 15px;
+}
