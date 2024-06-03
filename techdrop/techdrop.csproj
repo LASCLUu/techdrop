@@ -10,4 +10,8 @@
     <None Remove="wwwroot\content\Images\logo.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.6" />
+  </ItemGroup>
+
 </Project>
