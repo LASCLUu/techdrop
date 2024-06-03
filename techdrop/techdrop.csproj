@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="wwwroot\content\Images\logo.jpg" />
+  </ItemGroup>
+
 </Project>
